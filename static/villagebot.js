@@ -1,14 +1,3 @@
-// extra options checklist
-function options() {
-  var checkBox = document.getElementById("myCheck");
-  var options = document.getElementById("options");
-  if (checkBox.checked == true){
-    options.style.display = "block";
-  } else {
-     options.style.display = "none";
-  }
-}
-
 //prints an array of names as a list
 function print_list(array){
 		let text = "";
