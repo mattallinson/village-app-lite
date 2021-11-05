@@ -12,7 +12,7 @@ function print_list(array){
 //take names from the list for a given temperature
 function generateNames(){
 	var user_temp = document.getElementById("temp").value
-	let filename = "../lists/json/temp"+user_temp+".json"
+	let filename = "lists/json/temp"+user_temp+".json"
 	fetch(filename)
 	.then(data=>data.json())
 	.then(x=>_.sample(x,5))
